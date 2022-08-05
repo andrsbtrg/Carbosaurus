@@ -80,6 +80,10 @@ namespace Carbosaurus.Utils
 
         internal void AddToPreview(List<RhinoObject> surfaces)
         {
+            if (surfaces == null)
+            {
+                return;
+            }
             if (currentMaterials == null)
                 currentMaterials = new List<RhinoObject>();
 
